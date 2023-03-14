@@ -1,17 +1,19 @@
-import { ReactElement } from 'react'
-import logo from '@assets/logos/logo.svg'
+import { ReactElement, useEffect, useState } from 'react'
+import axios from 'axios'
+import CemantixContainer from '@src/components/cemantix/CemantixContainer'
 
 function App(): ReactElement {
-  return (
-    <div className="p-20 border shadow-xl border-gray-50 rounded-xl">
-      <header>
-        <div className="flex justify-center">
-          <img src={logo} className="w-32 h-32" alt="React logo" />
-        </div>
-        <p className="pb-3 text-2xl">Hello Vite + React + Tailwind CSS!</p>
-      </header>
-    </div>
-  )
+  const apiUrl = import.meta.env.VITE_APP_API_BASE_URL
+  const [data, setData] = useState<Response | undefined>(undefined)
+
+  useEffect(() => {
+    axios.get(apiUrl).then((response) => {
+      const data: Response = response.data
+      setData(data)
+    })
+  }, [])
+
+  return <div>{data && <CemantixContainer data={data.cemantix} />}</div>
 }
 
 export default App
