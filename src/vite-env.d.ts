@@ -6,6 +6,7 @@ interface Data {
 
 interface Response {
   cemantix: Data
+  cemantle: Data
 }
 
 /// <reference types="vite/client" />

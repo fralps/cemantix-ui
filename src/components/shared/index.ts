@@ -1,1 +1,2 @@
-export { default as LastWord } from '@src/components/shared/LastWord'
+export { default as Stats } from '@src/components/shared/Stats'
+export { default as Footer } from '@src/components/shared/Footer'
