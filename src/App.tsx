@@ -1,6 +1,6 @@
 import { ReactElement, useEffect, useState } from 'react'
 import axios from 'axios'
-import { Stats, Footer } from '@src/components/shared'
+import { Stats, Loader, Footer } from '@src/components/shared'
 
 function App(): ReactElement {
   const apiUrl = import.meta.env.VITE_APP_API_BASE_URL
@@ -43,6 +43,7 @@ function App(): ReactElement {
             </p>
             <hr className="mt-10 bg-indigo-600" />
           </div>
+          {!data && <Loader />}
           {data && (
             <>
               <Stats lastWord={data.cemantix.lastWord} app="Cemantix" />
