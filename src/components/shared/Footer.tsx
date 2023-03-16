@@ -11,7 +11,7 @@ function Footer(): ReactElement {
           <a href="https://flowbite.com/" className="hover:underline">
             Cemantix UI™
           </a>
-          . All Rights Reserved.
+          . All Rights Reserved | Developed by Fralps
         </span>
         <ul className="flex flex-wrap items-center pt-6 mt-3 text-sm text-black sm:mt-0">
           <li className="mr-4">

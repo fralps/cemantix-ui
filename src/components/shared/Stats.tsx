@@ -8,7 +8,7 @@ function Stats({
   app: string
 }): ReactElement {
   return (
-    <div className="py-24 mb-10 bg-white rounded-lg cursor-pointer drop-shadow-2xl sm:py-32">
+    <div className="py-20 mb-10 bg-white rounded-lg cursor-pointer drop-shadow-2xl sm:py-32">
       <div className="px-6 mx-auto max-w-7xl lg:px-8">
         <dl className="grid grid-cols-1 text-center gap-y-16 gap-x-8 lg:grid-cols-3">
           <div className="flex flex-col max-w-xs mx-auto gap-y-4">
