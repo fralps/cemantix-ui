@@ -52,8 +52,8 @@ function App(): ReactElement {
           {!data && <Loader />}
           {data && (
             <>
-              <Stats lastWord={data.cemantix.lastWord} app="Cemantix" />
-              <Stats lastWord={data.cemantle.lastWord} app="Cemantle" />
+              <Stats fullData={data.cemantix} app="Cemantix" />
+              <Stats fullData={data.cemantle} app="Cemantle" />
             </>
           )}
         </div>

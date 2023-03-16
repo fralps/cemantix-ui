@@ -1,7 +1,10 @@
 declare module '*'
 
 interface Data {
+  date: string
+  elapsedTime: string
   lastWord: string
+  requestsNumber: number
 }
 
 interface Response {
