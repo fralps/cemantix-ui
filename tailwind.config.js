@@ -4,6 +4,9 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
   content: ['./dist/**/*.html', './src/**/*.{js,jsx,ts,tsx}', './*.html'],
   plugins: [require('@tailwindcss/forms')],
+  theme: {
+    extend: {}
+  },
   variants: {
     extend: {
       opacity: ['disabled'],

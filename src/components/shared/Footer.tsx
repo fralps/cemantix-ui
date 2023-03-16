@@ -1,10 +1,10 @@
 import { ReactElement } from 'react'
 
 function Footer(): ReactElement {
-  const currentYear = new Date().getFullYear()
+  const currentYear: number = new Date().getFullYear()
 
   return (
-    <footer className="fixed bottom-0 w-full bg-gray-100">
+    <footer className="bottom-0 w-full bg-transparent">
       <div className="container p-2 mx-auto md:flex md:items-center md:justify-between">
         <span className="text-sm text-black sm:text-center">
           © {currentYear}{' '}

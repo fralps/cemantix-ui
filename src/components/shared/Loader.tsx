@@ -5,7 +5,7 @@ function Loader(): ReactElement {
     <div className="flex justify-center mt-36">
       <svg
         aria-hidden="true"
-        className="inline w-12 h-12 mr-2 text-indigo-200 animate-spin fill-indigo-600"
+        className="inline w-12 h-12 mr-2 text-white animate-spin fill-yellow-400"
         viewBox="0 0 100 101"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
