@@ -1,19 +1,19 @@
-# vite React TypeScript tailwindcss starter
+# Cemantix UI
 
-Template for vite, React + tailwindcss + TypeScript projects with some tools preconfigured.
+Visual representation of Cemantix & Cemantle word of the day
 
-## About
+App url: [Cemantix UI](https://cemantix-ui.vercel.app/)
 
-Template for vite, React + tailwindcss + TypeScript projects with some tools preconfigured.
+### Tech stack
 
-![Screenshot](assets/screenshot.png)
+![](https://img.shields.io/badge/React-informational?style=flat&logo=react&logoColor=white&color=62DAFC) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=flat&logo=typescript&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/Tailwindcss-%2338B2AC.svg?style=flat&logo=tailwind-css&logoColor=white) ![Vite](https://img.shields.io/badge/Vite-%2335495e.svg?style=flat&logo=vite&logoColor=%234FC08D) ![Vercel](https://img.shields.io/badge/Vercel-%23000000.svg?style=flat&logo=vercel&logoColor=white)
+
 
 ### Libraries
 
 - [Jest 29](https://jestjs.io/)
 - [React 18](https://reactjs.org/)
 - [tailwindcss 3](https://tailwindcss.com/)
-  - [tailwindcss forms plugin](https://tailwindcss-forms.vercel.app/)
 - [TypeScript 4.9.5](https://www.typescriptlang.org/)
 - [vite 4](https://vitejs.dev/)
 
@@ -27,14 +27,10 @@ Template for vite, React + tailwindcss + TypeScript projects with some tools pre
 - [Prettier 2](https://prettier.io/)
 - [VS Code settings](https://code.visualstudio.com/)
 
-## Usage
+### Usage
 
-Create a new project from this template by clicking the "Use this template" button:
-
-![](assets/template-usage.png)
+Just run `dev` scripts located in `./scripts/`:
 
 ```bash
-yarn
-yarn dev
-yarn test
+./scripts/dev
 ```
