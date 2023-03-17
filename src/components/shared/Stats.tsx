@@ -17,7 +17,7 @@ function Stats({
         <dl className="grid grid-cols-1 text-center gap-y-16 gap-x-8 lg:grid-cols-3">
           <div className="flex flex-col max-w-xs mx-auto gap-y-4">
             <dt className="text-base leading-7 text-gray-600">
-              {app} last word from {fullData.date}
+              {app} last word from <b>{fullData.date}</b>
             </dt>
             <dd className="order-first text-2xl font-semibold tracking-tight text-indigo-600 capitalize sm:text-4xl">
               {fullData.lastWord}

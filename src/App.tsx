@@ -1,6 +1,6 @@
 import { ReactElement, useEffect, useState } from 'react'
 import axios from 'axios'
-import { Stats, Loader, Footer } from '@src/components/shared'
+import { Stats, NotionUrl, Loader, Footer } from '@src/components/shared'
 
 function App(): ReactElement {
   const apiUrl: string = import.meta.env.VITE_APP_API_BASE_URL
@@ -31,12 +31,12 @@ function App(): ReactElement {
               Daily recap of the famous Cemantix and Cemantle apps
             </p>
             <p className="mt-6 text-lg leading-8 text-white">
-              It is a <b className="text-yellow-400">Side Project</b> in several
-              parts.
+              It is a personal <b className="text-yellow-400">Side Project</b>{' '}
+              divided into several parts.
             </p>
             <p className="mt-2 text-lg leading-8 text-white">
               The first part consists in finding the word of the day of the
-              Cemantix and Cemantle apps via a{' '}
+              Cemantix and Cemantle apps via a GithubActions automated{' '}
               <b className="text-yellow-400">Python</b> script.
             </p>
             <p className="mt-2 text-lg leading-8 text-white">
@@ -44,8 +44,8 @@ function App(): ReactElement {
               <b className="text-yellow-400">Notion</b> database.
             </p>
             <p className="mt-2 text-lg leading-8 text-white">
-              And finally, this app will allow to make a visual restitution of
-              the data.
+              And finally, this app makes a visual restitution of the data for
+              today.
             </p>
             <hr className="mt-10 mb-10 bg-white" />
           </div>
@@ -54,6 +54,21 @@ function App(): ReactElement {
             <>
               <Stats fullData={data.cemantix} app="Cemantix" />
               <Stats fullData={data.cemantle} app="Cemantle" />
+              <hr className="mb-10 bg-white" />
+              <div className="p-10 bg-white rounded-lg cursor-pointer drop-shadow-2xl">
+                <p className="mb-6 text-2xl">
+                  Full data sets available on{' '}
+                  <span className="text-indigo-600">Notion</span>
+                </p>
+                <NotionUrl
+                  url="https://bead-cylinder-699.notion.site/fe486d80a5994c02af48af8dbe3d4f96?v=59ad4e14485d477da756a04999190730"
+                  app="Cemantix"
+                />
+                <NotionUrl
+                  url="https://bead-cylinder-699.notion.site/6440b74a3e6f4d9c9819e0e40eb6613d?v=4db027d34f11496ca09786f996703914"
+                  app="Cemantle"
+                />
+              </div>
             </>
           )}
         </div>
