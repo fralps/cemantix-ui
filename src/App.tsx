@@ -24,7 +24,7 @@ function App(): ReactElement {
           })}
         </ul>
         <div className="px-6 mx-auto max-w-7xl lg:px-8">
-          <div className="max-w-2xl mx-auto">
+          <FadeIn className="max-w-2xl mx-auto">
             <h1 className="text-4xl font-semibold leading-7 text-yellow-400 lg:text-center">
               Cemantix UI
             </h1>
@@ -49,7 +49,7 @@ function App(): ReactElement {
               today.
             </p>
             <hr className="mt-10 mb-10 bg-white" />
-          </div>
+          </FadeIn>
           {!data && <Loader />}
           {data && (
             <FadeIn>
