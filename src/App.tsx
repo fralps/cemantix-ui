@@ -1,6 +1,7 @@
 import { ReactElement, useEffect, useState } from 'react'
 import axios from 'axios'
 import { Stats, NotionUrl, Loader, Footer } from '@src/components/shared'
+import FadeIn from 'react-fade-in'
 
 function App(): ReactElement {
   const apiUrl: string = import.meta.env.VITE_APP_API_BASE_URL
@@ -51,7 +52,7 @@ function App(): ReactElement {
           </div>
           {!data && <Loader />}
           {data && (
-            <>
+            <FadeIn>
               <Stats fullData={data.cemantix} app="Cemantix" />
               <Stats fullData={data.cemantle} app="Cemantle" />
               <hr className="mb-10 bg-white" />
@@ -69,7 +70,7 @@ function App(): ReactElement {
                   app="Cemantle"
                 />
               </div>
-            </>
+            </FadeIn>
           )}
         </div>
       </div>
