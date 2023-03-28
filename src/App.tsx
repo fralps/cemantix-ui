@@ -6,13 +6,19 @@ import FadeIn from 'react-fade-in'
 function App(): ReactElement {
   const apiUrl: string = import.meta.env.VITE_APP_API_BASE_URL
   const [data, setData] = useState<Response | undefined>(undefined)
+  const [error, setError] = useState<boolean>(false)
   const containerHeight: string = data ? 'h-full' : 'h-screen'
 
   useEffect(() => {
-    axios.get(apiUrl).then((response) => {
-      const data: Response = response.data
-      setData(data)
-    })
+    axios
+      .get(apiUrl)
+      .then((response) => {
+        const data: Response = response.data
+        setData(data)
+      })
+      .catch(() => {
+        setError(true)
+      })
   }, [])
 
   return (
@@ -50,7 +56,16 @@ function App(): ReactElement {
             </p>
             <hr className="mt-10 mb-10 bg-white" />
           </FadeIn>
-          {!data && <Loader />}
+          {!data && !error && <Loader />}
+
+          {error && (
+            <div className="p-10 bg-red-300 rounded-lg drop-shadow-2xl">
+              <p className="font-bold text-white">
+                You are not authorized to make a request on this API
+              </p>
+            </div>
+          )}
+
           {data && (
             <FadeIn>
               <Stats fullData={data.cemantix} app="Cemantix" />
