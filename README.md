@@ -11,7 +11,6 @@ App url: [Cemantix UI](https://cemantix-ui.vercel.app/)
 
 ### Libraries
 
-- [Jest 29](https://jestjs.io/)
 - [React 18](https://reactjs.org/)
 - [tailwindcss 3](https://tailwindcss.com/)
 - [TypeScript 4.9.5](https://www.typescriptlang.org/)
