@@ -8,7 +8,7 @@ function Footer(): ReactElement {
       <div className="container p-2 mx-auto md:flex md:items-center md:justify-between">
         <span className="text-sm text-black sm:text-center">
           © {currentYear}{' '}
-          <a href="https://flowbite.com/" className="hover:underline">
+          <a href="https://cemantix-ui.vercel.app/" className="hover:underline">
             Cemantix UI™
           </a>
           . All Rights Reserved | Developed by Fralps
@@ -16,7 +16,7 @@ function Footer(): ReactElement {
         <ul className="flex flex-wrap items-center pt-6 mt-3 text-sm text-black sm:mt-0">
           <li className="mr-4">
             <a
-              href="https://github.com/fralps"
+              href="https://github.com/fralps/cemantix-solver"
               target="_blank"
               className="mr-4 hover:underline md:mr-6"
             >
