@@ -16,7 +16,7 @@
     "react-fade-in": "^2.0.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.6.3",
+    "@commitlint/cli": "^17.6.5",
     "@commitlint/config-conventional": "^17.6.3",
     "@heroicons/react": "^2.0.18",
     "@types/node": "20.2.5",
