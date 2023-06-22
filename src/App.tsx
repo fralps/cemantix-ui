@@ -1,6 +1,6 @@
 import { ReactElement, useEffect, useState } from 'react'
 import axios from 'axios'
-import { Stats, NotionUrl, Loader, Footer } from '@src/components/shared'
+import { Stats, NotionUrl, Loader } from '@src/components/shared'
 import FadeIn from 'react-fade-in'
 
 function App(): ReactElement {
@@ -23,7 +23,7 @@ function App(): ReactElement {
 
   return (
     <>
-      <div className={`py-20 bg-white area ${containerHeight}`}>
+      <div className={`py-14 bg-white area ${containerHeight}`}>
         <ul className="circles">
           {Array.from(Array(10), (e, i) => {
             return <li key={i}></li>
@@ -31,9 +31,12 @@ function App(): ReactElement {
         </ul>
         <div className="px-6 mx-auto max-w-7xl lg:px-8">
           <FadeIn className="max-w-2xl mx-auto">
-            <h1 className="text-4xl font-semibold leading-7 text-yellow-400 lg:text-center">
+            <h1 className="text-4xl font-semibold leading-7 text-yellow-400 uppercase duration-100 lg:text-center animate-bounce">
               Cemantix UI
             </h1>
+            <div className="mt-2 text-xs italic text-gray-300 lg:text-center">
+              Developed by Fralps
+            </div>
             <p className="mt-4 text-base font-bold tracking-tight text-gray-200 sm:text-2xl lg:text-center">
               Daily recap of the famous Cemantix and Cemantle apps
             </p>
@@ -89,7 +92,6 @@ function App(): ReactElement {
           )}
         </div>
       </div>
-      <Footer />
     </>
   )
 }
