@@ -2,7 +2,7 @@ import { ReactElement } from 'react'
 
 function Loader(): ReactElement {
   return (
-    <div className="flex justify-center mt-36">
+    <div className="flex justify-center mt-24 md:mt-36">
       <svg
         aria-hidden="true"
         className="inline w-12 h-12 mr-2 text-white animate-spin fill-yellow-400"
