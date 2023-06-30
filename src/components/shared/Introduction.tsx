@@ -20,7 +20,7 @@ function Introduction({
         Daily recap of the famous Cemantix and Cemantle apps
       </p>
       <p className="mt-6 text-lg leading-8 text-white">
-        It is a personal <b className="text-yellow-400">Side Project</b>
+        It is a personal <b className="text-yellow-400">Side Project </b>
         divided into several parts.
       </p>
       <p className="mt-2 text-lg leading-8 text-white">
