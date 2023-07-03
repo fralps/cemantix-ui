@@ -25,7 +25,7 @@ function Introduction({
       </p>
       <p className="mt-2 text-lg leading-8 text-white">
         The first part consists in finding the word of the day of the Cemantix
-        and Cemantle apps via a GithubActions automated brute force{' '}
+        and Cemantle apps via a Github Actions automated brute force{' '}
         <b className="text-yellow-400">Python</b> script.
       </p>
       <p className="mt-2 text-lg leading-8 text-white">
