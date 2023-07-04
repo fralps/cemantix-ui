@@ -25,7 +25,7 @@ function App(): ReactElement {
     <>
       <div className={`py-14 bg-white area ${containerHeight}`}>
         <ul className="circles">
-          {Array.from(Array(10), (e, i) => {
+          {Array.from(Array(12), (e, i) => {
             return <li key={i}></li>
           })}
         </ul>
