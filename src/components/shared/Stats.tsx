@@ -26,7 +26,7 @@ function Stats({
 
           <div className="flex flex-col max-w-xs mx-auto gap-y-4">
             <dt className="text-base leading-7 text-gray-600">
-              Number of requests for last word
+              Number of requests to find the word
             </dt>
             <dd className="order-first text-2xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
               {parsedNumber}
