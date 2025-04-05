@@ -2,9 +2,9 @@
   import { onMount } from 'svelte'
   import { fade } from 'svelte/transition';
 
-  import Introduction from './lib/Introduction.svelte'
-  import Stats from './lib/Stats.svelte'
-  import NotionUrl from './lib/NotionUrl.svelte'
+  import Introduction from '@/lib/Introduction.svelte'
+  import Stats from '@/lib/Stats.svelte'
+  import NotionUrl from '@/lib/NotionUrl.svelte'
 
   interface Response {
     cemantix: {
@@ -21,7 +21,7 @@
     }
   }
 
-  const apiUrl: string = import.meta.env.VITE_APP_API_BASE_URL
+  const apiUrl: string = import.meta.env.VITE_APP_API_BASE_URL as string
 
   let data: Response | null = $state(null)
   let error: string | null = $state(null)

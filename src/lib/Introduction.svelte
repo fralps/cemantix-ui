@@ -1,6 +1,6 @@
 <script lang="ts">
   import { fade } from 'svelte/transition';
-  import Loader from './Loader.svelte'
+  import Loader from '@/lib/Loader.svelte'
 
   let { data, error } = $props()
 </script>
