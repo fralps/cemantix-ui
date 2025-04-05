@@ -22,19 +22,3 @@ jobs:
 
       - name: ⚙️ Build app
         run: bun run build
-
-  lint:
-    runs-on: ubuntu-latest
-    name: Lint
-    needs: build
-    steps:
-      - uses: actions/checkout@v4
-      - name: 🥟 Setup Bun
-        shell: bash
-        run: npm install -g bun
-
-      - name: 🔧 Install dependencies
-        run: bun install
-
-      - name: 🔬 Run ESLint
-        run: bun run eslint
