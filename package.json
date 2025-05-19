@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^5.0.3",
-    "@tailwindcss/vite": "^4.1.6",
+    "@tailwindcss/vite": "^4.1.7",
     "@tsconfig/svelte": "^5.0.4",
     "path-browserify": "^1.0.1",
     "svelte": "^5.28.2",
