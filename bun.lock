@@ -7,7 +7,7 @@
       "devDependencies": {
         "@sveltejs/vite-plugin-svelte": "^7.3.1",
         "@tailwindcss/vite": "^4.3.4",
-        "@tsconfig/svelte": "^5.0.8",
+        "@tsconfig/svelte": "^5.0.9",
         "path-browserify": "^1.0.1",
         "svelte": "^5.57.0",
         "svelte-check": "^4.7.8",
@@ -101,7 +101,7 @@
 
     "@tailwindcss/vite": ["@tailwindcss/vite@4.3.4", "", { "dependencies": { "@tailwindcss/node": "4.3.4", "@tailwindcss/oxide": "4.3.4", "tailwindcss": "4.3.4" }, "peerDependencies": { "vite": "^5.2.0 || ^6 || ^7 || ^8" } }, "sha512-wGukGWb8SVuN7+FJvSS7M5eSJWDIWwVSvUvj1q41eTIhGPsS2DAgFWjA7YURJNwjHSgty59Hz8iMUiyO+YMHBQ=="],
 
-    "@tsconfig/svelte": ["@tsconfig/svelte@5.0.8", "", {}, "sha512-UkNnw1/oFEfecR8ypyHIQuWYdkPvHiwcQ78sh+ymIiYoF+uc5H1UBetbjyqT+vgGJ3qQN6nhucJviX6HesWtKQ=="],
+    "@tsconfig/svelte": ["@tsconfig/svelte@5.0.9", "", {}, "sha512-gbtbqsEFq9gFzGmgJMIB3+leXVmkUttoFjzeHsbqN6qFKst40fvxnN9+3Ajdl8VlIGwPevs9LNJ8YUhQgchqaw=="],
 
     "@types/estree": ["@types/estree@1.0.8", "", {}, "sha512-dWHzHa2WqEXI/O1E9OjrocMTKJl2mSrEolh1Iomrv6U+JuNwaHXsXx9bLu5gG7BUWFIN0skIQJQ/L1rIex4X6w=="],
 
